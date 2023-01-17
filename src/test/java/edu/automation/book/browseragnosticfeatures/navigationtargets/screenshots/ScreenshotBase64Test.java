@@ -1,4 +1,4 @@
-package edu.automation.book.browseragnosticfeatures.screenshots;
+package edu.automation.book.browseragnosticfeatures.navigationtargets.screenshots;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
