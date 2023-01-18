@@ -28,7 +28,7 @@ public class LoadExtensionEdgeTest {
     void setup() throws URISyntaxException {
         Path extension = Paths.get(ClassLoader.getSystemResource("web-extension").toURI());
         EdgeOptions options = new EdgeOptions();
-        /* Specifying the extension path using the --load-extension argument */
+        // Specifying the extension path using the --load-extension argument
         options.addArguments("--load-extension=" + extension.toAbsolutePath());
 
         driver = WebDriverManager.edgedriver().capabilities(options).create();

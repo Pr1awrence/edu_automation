@@ -9,6 +9,7 @@ import java.util.Arrays;
 * Drawing a circle (modified blue circle)
 * decorate: set blue color (modified blue circle)
 */
+
 public class ClientCode {
     public static void main(String[] args) {
         Shape circle = new Circle();

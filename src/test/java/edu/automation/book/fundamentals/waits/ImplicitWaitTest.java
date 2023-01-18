@@ -30,7 +30,7 @@ public class ImplicitWaitTest {
         driver.get("https://bonigarcia.dev/selenium-webdriver-java/loading-images.html");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        /* If the element is not shown, there will be an error (write 5 sec instead of 10) */
+        // If the element is not shown, there will be an error (write 5 sec instead of 10)
         WebElement landscape = driver.findElement(By.id("landscape"));
         assertThat(landscape.getAttribute("src")).containsIgnoringCase("landscape");
     }

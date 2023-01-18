@@ -28,7 +28,7 @@ public class DrawInCanvasTest {
         Actions actions = new Actions(driver);
 
         WebElement canvas = driver.findElement(By.tagName("canvas"));
-        /* Add clickAndHold() for drawing into the canvas */
+        // Add clickAndHold() for drawing into the canvas
         actions.moveToElement(canvas).clickAndHold();
 
         int numPoints = 10;

@@ -22,6 +22,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * eager / ReadyState: interactive / DOM access is ready, but other resources like images may still be loading
  * none / ReadyState: Any / Does not block WebDriver at all
  */
+
 public class PageLoadingStrategiesTest {
     private final static Logger LOGGER = Logger.getLogger(PageLoadingStrategiesTest.class.getName());
     WebDriver driver;
@@ -47,7 +48,7 @@ public class PageLoadingStrategiesTest {
         long initMillis = System.currentTimeMillis();
         driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
         Duration elapsed = Duration.ofMillis(System.currentTimeMillis() - initMillis);
-        /* Use findElements instead because only the initial page is downloaded */
+        // Use findElements instead because only the initial page is downloaded
         List<WebElement> image = driver.findElements(By.className("img-fluid"));
 
         assertThat(image.size()).isEqualTo(0);

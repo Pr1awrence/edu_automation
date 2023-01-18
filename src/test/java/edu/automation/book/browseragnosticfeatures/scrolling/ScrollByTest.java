@@ -20,7 +20,7 @@ public class ScrollByTest {
         driver.quit();
     }
 
-    /* This is synchronous js script */
+    // This is synchronous js script
     @Test
     void testScrollBy() throws InterruptedException {
         driver.get("https://bonigarcia.dev/selenium-webdriver-java/long-page.html");

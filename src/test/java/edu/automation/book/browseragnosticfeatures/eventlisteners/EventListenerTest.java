@@ -29,7 +29,7 @@ public class EventListenerTest {
     void testEventListener() {
         driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
         assertThat(driver.getTitle()).isEqualTo("Hands-On Selenium WebDriver with Java");
-        /* Click on a web link to change the page. Resulting two screenshots should be different */
+        // Click on a web link to change the page. Resulting two screenshots should be different
         driver.findElement(By.linkText("Web form")).click();
     }
 }

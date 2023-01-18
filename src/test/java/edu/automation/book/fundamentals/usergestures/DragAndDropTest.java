@@ -32,7 +32,7 @@ public class DragAndDropTest {
 
         WebElement draggable = driver.findElement(By.id("draggable"));
         int offset = 100;
-        /* Check that the draggable element moves as expected */
+        // Check that the draggable element moves as expected
         Point initLocation = draggable.getLocation();
         actions.dragAndDropBy(draggable, offset, 0)
                 .dragAndDropBy(draggable, 0, offset)
@@ -40,7 +40,7 @@ public class DragAndDropTest {
                 .dragAndDropBy(draggable, 0, -offset).build().perform();
         assertThat(initLocation).isEqualTo(draggable.getLocation());
 
-        /* Check that the draggable element moves to target location */
+        // Check that the draggable element moves to target location
         WebElement target = driver.findElement(By.id("target"));
         actions.dragAndDrop(draggable, target).build().perform();
         assertThat(draggable.getLocation()).isEqualTo(target.getLocation());

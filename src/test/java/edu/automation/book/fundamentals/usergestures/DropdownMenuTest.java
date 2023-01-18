@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * contextClick(element) - right-click on the element
  * build() - generate a composite action containing all previous actions
  * perform() - execute the composite action
- * */
+ */
 
 public class DropdownMenuTest {
     WebDriver driver;

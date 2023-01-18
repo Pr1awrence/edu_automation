@@ -24,7 +24,7 @@ public class ScrollIntoViewTest {
         driver.quit();
     }
 
-    /* This is synchronous js script */
+    // This is synchronous js script
     @Test
     void testScrollIntoView() throws InterruptedException {
         driver.get("https://bonigarcia.dev/selenium-webdriver-java/long-page.html");

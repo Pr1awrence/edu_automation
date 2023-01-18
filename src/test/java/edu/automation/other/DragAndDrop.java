@@ -19,7 +19,7 @@ public class DragAndDrop {
         Actions actions = new Actions(driver);
         //actions.dragAndDrop(draggable, droppable).perform();
 
-        /* Snippet below does the same thing */
+        // Snippet below does the same thing
         actions
                 .moveToElement(draggable)
                 .pause(Duration.ofSeconds(1))

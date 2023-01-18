@@ -7,6 +7,7 @@ package other.patterndecorator;
 * добавить повторяющиеся действия в работу всех декораторов,
 * например добавить у всех декораторов отрисовку фигурам черной рамки
 */
+
 public abstract class ColorDecorator implements Shape {
     protected Shape decoratedShape;
 

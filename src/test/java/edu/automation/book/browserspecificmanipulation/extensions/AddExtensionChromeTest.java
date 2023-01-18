@@ -15,7 +15,7 @@ public class AddExtensionChromeTest {
 
     @BeforeEach
     void setup() throws URISyntaxException {
-        /* Put the extension package (.crx) in the resources folder */
+        // Put the extension package (.crx) in the resources folder
         Path extension = Paths.get(ClassLoader.getSystemResource("extension_name.crx").toURI());
         ChromeOptions options = new ChromeOptions();
         options.addExtensions(extension.toFile());

@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * moveToElement(element) - move mouse cursor to the middle of a given element
  * build() - generate a composite action containing all previous actions
  * perform() - execute the composite action
- * */
+ */
 
 public class MouseOverTest {
     WebDriver driver;
