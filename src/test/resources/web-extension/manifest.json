@@ -1,0 +1,18 @@
+{
+  "description": "Simple web extension for test purposes",
+  "manifest_version": 2,
+  "name": "simple-web-extension",
+  "version": "1.0.0",
+  "homepage_url": "https://nohomepageurl",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "extension.js"
+      ]
+    }
+  ]
+}

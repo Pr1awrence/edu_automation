@@ -1,6 +1,7 @@
-package edu.automation.book.browserspecificmanipulation;
+package edu.automation.book.browserspecificmanipulation.extensions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,7 +10,7 @@ import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class InstallWebExtensionTest {
+public class AddExtensionChromeTest {
     WebDriver driver;
 
     @BeforeEach
@@ -20,5 +21,10 @@ public class InstallWebExtensionTest {
         options.addExtensions(extension.toFile());
 
         driver = WebDriverManager.chromedriver().capabilities(options).create();
+    }
+
+    @AfterEach
+    void teardown() {
+        driver.quit();
     }
 }
