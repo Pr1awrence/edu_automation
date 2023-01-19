@@ -16,8 +16,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
-* The same setup method will be used by the edge browser
-*/
+ * The same setup method will be used by the edge browser
+ */
 
 public class GeolocationChromeTest {
     WebDriver driver;
