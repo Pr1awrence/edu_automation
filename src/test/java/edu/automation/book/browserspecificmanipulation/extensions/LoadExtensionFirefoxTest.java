@@ -41,7 +41,7 @@ public class LoadExtensionFirefoxTest {
     }
 
     @Test
-    void test() {
+    void testLoadExtension() {
         driver.get("https://www.selenium.dev/");
         WebElement header = driver.findElement(By.tagName("h1"));
         assertThat(header.getText()).isEqualTo("Use Selenium!");
