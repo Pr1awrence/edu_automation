@@ -12,9 +12,9 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import java.time.Duration;
 
 /*
-* More about assertj exception assertions is here:
-* https://www.baeldung.com/assertj-exception-assertion
-* */
+ * More about assertj exception assertions is here:
+ * https://www.baeldung.com/assertj-exception-assertion
+ * */
 
 public class PageLoadTimeoutTest {
     WebDriver driver;

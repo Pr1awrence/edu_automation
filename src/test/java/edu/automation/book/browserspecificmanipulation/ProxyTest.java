@@ -11,8 +11,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /*
-* docs: https://www.selenium.dev/documentation/webdriver/drivers/options/#proxy
-*/
+ * docs: https://www.selenium.dev/documentation/webdriver/drivers/options/#proxy
+ */
 
 public class ProxyTest {
     WebDriver driver;

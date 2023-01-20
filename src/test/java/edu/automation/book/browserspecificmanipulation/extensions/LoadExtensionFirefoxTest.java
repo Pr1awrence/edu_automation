@@ -16,9 +16,9 @@ import static io.github.bonigarcia.wdm.WebDriverManager.zipFolder;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /*
-* As of Selenium 4.1, Firefox allows installing web extensions from its source code -
-* using installExtension() method from HasExtensions interface, which FirefoxDriver implements.
-*/
+ * As of Selenium 4.1, Firefox allows installing web extensions from its source code -
+ * using installExtension() method from HasExtensions interface, which FirefoxDriver implements.
+ */
 
 public class LoadExtensionFirefoxTest {
     WebDriver driver;

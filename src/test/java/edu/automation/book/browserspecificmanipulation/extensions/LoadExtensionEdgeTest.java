@@ -16,10 +16,10 @@ import java.nio.file.Paths;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /*
-* Chromium-based browsers (Chrome, Edge) also allow loading an extension from its source code (not packaged as a crx file).
-* This test setup illustrates this feature.
-* It uses JS to change the content of first-level headers (h1 tags) with a custom message.
-*/
+ * Chromium-based browsers (Chrome, Edge) also allow loading an extension from its source code (not packaged as a crx file).
+ * This test setup illustrates this feature.
+ * It uses JS to change the content of first-level headers (h1 tags) with a custom message.
+ */
 
 public class LoadExtensionEdgeTest {
     WebDriver driver;

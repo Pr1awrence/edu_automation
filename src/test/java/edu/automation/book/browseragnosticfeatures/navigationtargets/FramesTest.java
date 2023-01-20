@@ -34,9 +34,9 @@ public class FramesTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         /* Another way to switch to iframe/frame (instead of .frameToBeAvailableAndSwitchToIt())
-        * wait.until(ExpectedConditions.presenceOfElementLocated(By.name("frame-body")));
-        * driver.switchTo().frame("frame-body");
-        * */
+         * wait.until(ExpectedConditions.presenceOfElementLocated(By.name("frame-body")));
+         * driver.switchTo().frame("frame-body");
+         * */
 
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.name("frame-body")));
         By pName = By.tagName("p");
